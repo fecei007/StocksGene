@@ -1,14 +1,10 @@
 # NVDA Overnight Momentum
 
-Demo for Bitget AI Hackathon S2 focused on the overnight edge in tokenized NVDA.
+**Tokenized NVDA trades 24/7. Most gains happen while Wall Street sleeps.**
 
-## Run locally
-```bash
-npm install
-npm run dev
-```
+A structured GetAgent Playbook focused on the overnight edge in tokenized US stocks, built for Bitget AI Hackathon S2.
 
-## Deploy
-Deploy the `public` folder to Vercel or enable GitHub Pages.
+## Why This Exists
 
-Paper / backtest only. Not financial advice.
+Traditional US stock traders only operate during market hours. Tokenized NVDA on Bitget continues to trade overnight and on weekends. Bitget’s own analysis showed that a significant portion of NVDA returns came from overnight moves rather than the regular session.
+
