@@ -1,0 +1,9 @@
+{
+  "name": "nvda-overnight",
+  "version": "1.0.0",
+  "description": "NVDA Overnight Momentum Playbook for Bitget AI Hackathon S2",
+  "scripts": {
+    "dev": "npx serve public",
+    "start": "npx serve public"
+  }
+}
