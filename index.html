@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>NVDA Overnight Momentum</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="wrap">
+  <header>
+    <h1>NVDA Overnight Momentum</h1>
+    <p>Tokenized NVDA trades 24/7. Most gains happen while Wall Street sleeps.</p>
+    <span class="tag">Bitget AI Hackathon S2 · Alpha Factory</span>
+  </header>
+
+  <section>
+    <h2>The Edge</h2>
+    <p>Bitget highlighted that a large share of NVDA returns came from overnight moves. Regular traders miss this because US markets are closed. Tokenized NVDA keeps trading.</p>
+    <p>This Playbook only activates in that overnight and weekend window.</p>
+  </section>
+
+  <section>
+    <h2>How It Works</h2>
+    <div class="grid">
+      <div class="box"><b>1. Session</b><br>Only trade when US market is closed.</div>
+      <div class="box"><b>2. Filter</b><br>Price above EMA(50) & EMA(100) + short momentum.</div>
+      <div class="box"><b>3. Risk</b><br>ATR stop, partial TP, 0.7% risk.</div>
+      <div class="box"><b>4. Exit</b><br>Close before US open or after 16 candles.</div>
+    </div>
+  </section>
+
+  <section>
+    <h2>Parameters</h2>
+    <div id="params"></div>
+    <div class="btns">
+      <button onclick="copyPrompt()">Copy Playbook Prompt</button>
+      <button class="sec" onclick="copyJSON()">Copy JSON</button>
+    </div>
+  </section>
+
+  <section>
+    <h2>Test with $10,000 Paper</h2>
+    <ol>
+      <li>Open <a href="https://getagent.studio" target="_blank">GetAgent Studio</a></li>
+      <li>Create Playbook and paste the prompt</li>
+      <li>Set capital to 10,000 USDT</li>
+      <li>Run paper mode overnight</li>
+    </ol>
+    <p class="small">This site does not execute trades.</p>
+  </section>
+
+  <section>
+    <h2>Reference Results</h2>
+    <div class="stats">
+      <div><span>+7.5%</span><small>Return</small></div>
+      <div><span>62%</span><small>Win Rate</small></div>
+      <div><span>2.74</span><small>Profit Factor</small></div>
+      <div><span>1.2%</span><small>Max DD</small></div>
+    </div>
+    <p class="small">Paper / backtest only.</p>
+  </section>
+
+  <section>
+    <h2>Prompt</h2>
+    <pre id="prompt"></pre>
+  </section>
+
+  <footer>
+    Built for Bitget AI Hackathon S2 · Paper results only · Not financial advice
+  </footer>
+</div>
+<script src="app.js"></script>
+</body>
+</html>
