@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>NVDA Overnight Momentum — GetAgent Playbook</title>
+<link rel="stylesheet" href="/style.css">
+</head>
+<body>
+<div class="container">
+  <header>
+    <h1>NVDA Overnight Momentum</h1>
+    <p class="subtitle">Tokenized NVDA trades 24/7. Most gains happen while Wall Street sleeps.</p>
+    <div class="badge">Bitget AI Hackathon S2 · Alpha Factory</div>
+  </header>
+
+  <div class="card">
+    <h2>Strategy Parameters</h2>
+    <div id="params"></div>
+    <button onclick="copyPrompt()">Copy Playbook Prompt</button>
+    <button class="secondary" onclick="copyParams()">Copy Parameters (JSON)</button>
+  </div>
+
+  <div class="card">
+    <h2>How to Simulate ($10,000 Paper)</h2>
+    <ol>
+      <li>Open <a href="https://getagent.studio" target="_blank">GetAgent Studio</a></li>
+      <li>Create a new Playbook and paste the copied prompt</li>
+      <li>Set starting capital to <strong>$10,000</strong></li>
+      <li>Run in Paper mode — focus on overnight / weekend windows</li>
+      <li>Monitor equity curve and AI Decision Log</li>
+    </ol>
+    <p class="note">No trades are executed on this website. Simulation happens inside GetAgent Studio.</p>
+  </div>
+
+  <div class="card">
+    <h2>Reference Backtest</h2>
+    <div class="stats">
+      <div class="stat"><div class="value">+7.5%</div><div class="label">Return</div></div>
+      <div class="stat"><div class="value">62.2%</div><div class="label">Win Rate</div></div>
+      <div class="stat"><div class="value">2.74</div><div class="label">Profit Factor</div></div>
+      <div class="stat"><div class="value">1.2%</div><div class="label">Max DD</div></div>
+    </div>
+  </div>
+
+  <div class="card">
+    <h2>Playbook Prompt</h2>
+    <pre id="prompt"></pre>
+  </div>
+
+  <p class="disclaimer">
+    All results are paper or backtest records only. This is not financial advice.
+  </p>
+
+  <footer>
+    Built for Bitget AI Hackathon S2 · 
+    <a href="https://www.bitget.com/en/activity-hub/hackathon" target="_blank">Hackathon</a> · 
+    <a href="https://getagent.studio" target="_blank">GetAgent Studio</a>
+  </footer>
+</div>
+
+<script src="/app.js"></script>
+</body>
+</html>
